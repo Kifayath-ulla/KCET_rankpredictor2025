@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KCET 2025 Rank Predictor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gradient-to-br from-[#0f172a] to-[#1e3a8a] min-h-screen flex items-center justify-center text-white font-sans px-4">
+  <div class="w-full max-w-lg bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl p-8 animate-fade-in border border-white/20">
+    <h1 class="text-3xl font-bold text-blue-300 drop-shadow-sm text-center mb-2 whitespace-nowrap p-1">KCET 2025 Rank Predictor 🚀</h1>
+    <p class="text-blue-100 text-center mb-6">Estimate your KCET rank based on your marks</p>
+    <label class="block text-blue-100 font-medium text-lg mb-2">Board Marks (out of 300):</label>
+    <input type="number" id="boardMarks" class="w-full p-3 rounded-xl bg-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-4" placeholder="e.g. 270" min="0" max="300" />
+    <label class="block text-blue-100 font-medium text-lg mb-2">KCET Marks (out of 180):</label>
+    <input type="number" id="kcetMarks" class="w-full p-3 rounded-xl bg-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="e.g. 150" min="0" max="180" />
+    <button id="predictBtn" class="shine-button mt-6 bg-blue-400 hover:bg-blue-300 text-blue-900 font-bold py-3 px-6 rounded-xl w-full transition-transform duration-300 transform hover:scale-105 shadow-xl">Predict My Rank</button>
+    <div id="rankBox" class="mt-6 text-xl font-semibold text-blue-100 text-center hidden"></div>
+    <div class="mt-8 text-sm text-blue-200 text-center">
+      <p>📢 This tool uses KCET 2025 estimated data.</p>
+      <p>⚠️ Not affiliated with KEA. For updates join <a href="https://t.me/karnataka_kea" class="underline text-blue-300">t.me/karnataka_kea</a></p>
+      <p class="mt-2 font-bold">Built 🚀 by Nas x Kifayath</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
